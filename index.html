@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radar Plot</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="svg-container" id="radar-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="-50 -50 1100 1100"
+        id="radar-plot"
+      >
+        <circle r="500" cx="500" cy="500" fill="#ddd"></circle>
+        <line x1="500" y1="0" x2="500" y2="1000" stroke="#ddd" />
+        <line x1="0" y1="499" x2="1000" y2="500" stroke="#000" />
+      </svg>
+    </div>
+    <script src="/radar-plot.js"></script>
+  </body>
+</html>

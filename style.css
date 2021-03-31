@@ -1,0 +1,13 @@
+body {
+  background: #aaa;
+  display: flex;
+  height: 100vh;
+}
+
+.svg-container {
+  background: white;
+  width: 95vw;
+  height: 95vw;
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
