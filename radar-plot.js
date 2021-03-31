@@ -5,7 +5,7 @@ import { Radar } from './js/radar';
 var xmlns = 'http://www.w3.org/2000/svg';
 
 const options = {
-  totalAngle: Math.PI * 2,
+  totalAngle: Math.PI,
   padding: 0,
   minPlotRadius: 150,
 };
