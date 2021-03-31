@@ -2,14 +2,19 @@
   "name": "radar-plot",
   "version": "1.0.0",
   "description": "",
-  "main": "radar-plot.js",
+  "main": "dist/index.html",
   "scripts": {
     "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }
