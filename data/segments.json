@@ -1,10 +1,12 @@
 [
-  { "label": "Fruit", "slug": "fruit", "color": "#fa9" },
-  { "label": "Vegetable", "slug": "vegetable", "color": "#ad0" },
+  { "label": "Wissenschaft & Forschung", "slug": "science", "color": "#A8E6CF" },
+  { "label": "Wirtschaft", "slug": "economy", "color": "#FF8B94" },
   {
-    "label": "Framework",
-    "slug": "framework",
-    "color": "#7dc"
+    "label": "Stadtverwaltung",
+    "slug": "city-administration",
+    "color": "#B39DDB"
   },
-  { "label": "Technology", "slug": "technology", "color": "#caf" }
+  { "label": "Verwaltungsnahe Akteure", "slug": "close", "color": "#81D4FA" },
+  { "label": "Zivilgesellschaft", "slug": "civil-society", "color": "#FFF176" },
+  { "label": "Stiftung & Vereine", "slug": "charities", "color": "#FFAB91" }
 ]

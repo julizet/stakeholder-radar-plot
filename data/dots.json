@@ -1,129 +1,198 @@
 [
-  { "label": "Apple", "segment": "technology", "ring": "high" },
-  { "label": "Red Hat", "segment": "technology", "ring": "high" },
-  { "label": "Microsoft", "segment": "technology", "ring": "high" },
-  { "label": "GraphQl", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": ".Net", "segment": "technology", "ring": "high" },
-  { "label": "GoLang", "segment": "technology", "ring": "high" },
-  { "label": "React", "segment": "framework", "ring": "high" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-  { "label": "Potato", "segment": "vegetable", "ring": "medium" },
-
-  { "label": "Blackberry", "segment": "technology", "ring": "low" },
-  { "label": "Mango", "segment": "fruit", "ring": "medium" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Grapes", "segment": "fruit", "ring": "low" },
-  { "label": "Orange", "segment": "fruit", "ring": "high" },
-  { "label": "Orange", "segment": "fruit", "ring": "high" },
-  { "label": "Orange", "segment": "fruit", "ring": "high" },
-  { "label": "Orange", "segment": "fruit", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Drupal 8", "segment": "framework", "ring": "high" },
-  { "label": "Magento", "segment": "framework", "ring": "low" },
-  { "label": "Magento", "segment": "framework", "ring": "low" },
-  { "label": "Magento", "segment": "framework", "ring": "low" },
-  { "label": "Magento", "segment": "framework", "ring": "low" },
-  { "label": "Magento", "segment": "framework", "ring": "low" },
-  { "label": "Magento", "segment": "framework", "ring": "low" }
+  {
+      "label": "Bundesamt für Naturschutz",
+      "segment": "close",
+      "ring": "germany"
+  },
+  {
+      "label": "Grün Berlin GmbH",
+      "segment": "close",
+      "ring": "berlin", 
+      "contact": "👻",
+      "website": "https://gruen-berlin.de/"
+  },
+  {
+      "label": "Zukunft Umwelt Gesellschaft",
+      "segment": "close",
+      "ring": "germany"
+  },
+  {
+      "label": "Berliner Stadtreinigung",
+      "segment": "close",
+      "ring": "berlin"
+  },
+  {
+      "label": "Amt für Statistik B/B",
+      "segment": "close",
+      "ring": "berlin"
+  }, 
+  {
+    "label": "Stiftung Klimaneutralität",
+    "segment": "charities",
+    "ring": "germany"
+  }, 
+  {
+    "label": "Regenwasseragentur",
+    "segment": "charities",
+    "ring": "berlin"
+  },
+  {
+    "label": "Heinrich-Böll-Stiftung",
+    "segment": "charities",
+    "ring": "germany"
+  }, 
+  {
+    "label": "Bits und Bäume",
+    "segment": "civil-society",
+    "ring": "berlin"
+  },
+  {
+    "label": "Bürger Begehren Klimaschutz",
+    "segment": "civil-society",
+    "ring": "berlin"
+  },
+  {
+    "label": "NABU Berlin",
+    "segment": "charities",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "BUND Berlin",
+    "segment": "charities",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Klima Neustart",
+    "segment": "civil-society",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Plan B 2030",
+    "segment": "civil-society",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Wassertanke e.V.",
+    "segment": "civil-society",
+    "ring": "hood"
+  }, 
+  {
+    "label": "Lieblingsbauminitiave",
+    "segment": "civil-society",
+    "ring": "hood"
+  },
+  {
+    "label": "SGA Fhain-Kreuzberg",
+    "segment": "city-administration",
+    "ring": "hood"
+  }, 
+  {
+    "label": "Klimaschutzteam Fhain-Kreuzberg",
+    "segment": "city-administration",
+    "ring": "hood"
+  }, 
+  {
+    "label": "SGA Neukölln",
+    "segment": "city-administration",
+    "ring": "hood"
+  }, 
+  {
+    "label": "SenMVKU",
+    "segment": "city-administration",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Umweltatlasteam / SenStadt",
+    "segment": "city-administration",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "SenWEB, Energieatlas",
+    "segment": "city-administration",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Klimagruppe (SKZL, SenUMBK, SenWEB)",
+    "segment": "city-administration",
+    "ring": "berlin"
+  }, 
+  {
+    "label": "Pflanzenschutzamt Berlin",
+    "segment": "city-administration",
+    "ring": "berlin", 
+    "website": "https://www.berlin.de/pflanzenschutzamt/",
+    "contact": "Martin Schreiner"
+  }, 
+  {
+    "label": "InfraLAB",
+    "segment": "economy",
+    "ring": "berlin"
+  },
+  {
+    "label": "Luftbild Umwelt Planung GmbH",
+    "segment": "economy",
+    "ring": "germany"
+  },
+  {
+    "label": "Tegel Projekt GmbH",
+    "segment": "economy",
+    "ring": "berlin"
+  },
+  {
+    "label": "IHK Berlin",
+    "segment": "economy",
+    "ring": "berlin"
+  },
+  {
+    "label": "Plantobelly",
+    "segment": "economy",
+    "ring": "germany"
+  },
+  {
+    "label": "Arbor Revital",
+    "segment": "economy",
+    "ring": "germany"
+  },
+  {
+    "label": "Climate Media Factory",
+    "segment": "science",
+    "ring": "germany"
+  },
+  {
+    "label": "Sustainable Smart Cities HTW",
+    "segment": "science",
+    "ring": "berlin"
+  },
+  {
+    "label": "Deutscher Wetterdienst (DWD)",
+    "segment": "science",
+    "ring": "germany"
+  },
+  {
+    "label": "Unabhängiges Institut für Umweltfragen",
+    "segment": "science",
+    "ring": "germany"
+  },
+  {
+    "label": "Climate Change AI",
+    "segment": "science",
+    "ring": "germany"
+  },
+  {
+    "label": "Ikem (Institut für Klimaschutz, Energie und Mobilität)",
+    "segment": "science",
+    "ring": "germany"
+  },
+  {
+    "label": "TU Berlin",
+    "segment": "science",
+    "ring": "berlin"
+  },
+  {
+    "label": "MIT Senseable LAB",
+    "segment": "science",
+    "ring": "global",
+    "contact": "Simone Mora",
+    "website": "https://senseable.mit.edu/"
+  }
 ]

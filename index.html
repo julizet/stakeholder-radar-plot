@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div class="svg-container" id="radar-container">
-      <svg
-        id="radar-plot"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="-50 -50 1100 1100"
-      >
-        <circle r="500" cx="500" cy="500" fill="#ddd"></circle>
-        <line x1="500" y1="0" x2="500" y2="1000" stroke="#ddd" />
-        <line x1="0" y1="499" x2="1000" y2="500" stroke="#000" />
-      </svg>
+    <div class="header">
+      <h1>Stakeholder Map</h1>
+      <h4>Click on a dot to get more information.</h4>
+    </div>
+    <div class="content">
+      <div class="rectangle"></div>
+      <div class="svg-container" id="radar-container">
+        <svg
+          id="radar-plot"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-50 -50 1100 1100"
+        >
+          <circle r="500" cx="500" cy="500" fill="#ddd"></circle>
+          <line x1="500" y1="0" x2="500" y2="1000" stroke="#ddd" />
+          <line x1="0" y1="499" x2="1000" y2="500" stroke="#000" />
+        </svg>
+      </div>
     </div>
     <script src="/radar-plot.js"></script>
   </body>

@@ -48,17 +48,16 @@ radar.segmentAxes.forEach((segAxis) => {
   labelPath.setAttribute('d', segAxis.axis.labelPath);
   labelPath.setAttribute('fill', 'none');
   labelPath.setAttribute('stroke', segAxis.color);
-  labelPath.setAttribute('stroke-width', 15);
+  labelPath.setAttribute('stroke-width', 40);
 
   const label = document.createElementNS(xmlns, 'text');
   const labelTextPath = document.createElementNS(xmlns, 'textPath');
   labelTextPath.setAttribute('href', `#label-path-${segAxis.slug}`);
   labelTextPath.innerHTML = segAxis.label;
-  labelTextPath.setAttribute('fill', '#555');
   labelTextPath.setAttribute('font-weight', '800');
   labelTextPath.setAttribute(
     'font-size',
-    `${radar.options.totalAngle / 3 + 0.5}em`
+    `${radar.options.totalAngle / 3.5 + 0.2}em`
   );
   labelTextPath.setAttribute('font-family', 'Sans-serif');
 
@@ -81,10 +80,11 @@ radar.dots.forEach((dot) => {
 
   radarDiagram.appendChild(dotEl);
   const circle = document.createElementNS(xmlns, 'circle');
-  circle.setAttribute('r', dot.r);
+  circle.setAttribute('r', dot.r * 2);
   circle.setAttribute('stroke', '#aaa');
   circle.setAttribute('stroke-width', 1);
   circle.setAttribute('fill', dot.color);
+  circle.classList.add('dot-circle'); // Add a unique class to dots
 
   const label = document.createElementNS(xmlns, 'text');
   label.innerHTML = dot.label.substr(0, 1);
@@ -96,4 +96,46 @@ radar.dots.forEach((dot) => {
 
   dotEl.appendChild(circle);
   dotEl.appendChild(label);
+
+  // Add hover effect
+  circle.addEventListener('mouseenter', () => {
+    circle.classList.add('hovered');
+  });
+
+  circle.addEventListener('mouseleave', () => {
+    circle.classList.remove('hovered');
+  });
+
+  // Add click event listener for focus and tooltip
+  dotEl.addEventListener('click', (event) => {
+    // Remove focus from any previously focused circle
+    const previouslyFocused = document.querySelector('circle.focused');
+    if (previouslyFocused) {
+      previouslyFocused.classList.remove('focused');
+    }
+
+    // Set focus on the clicked circle
+    circle.classList.add('focused');
+
+    // Get or create the tooltip element
+    let tooltip = document.getElementById('tooltip');
+    if (!tooltip) {
+      tooltip = document.createElement('div');
+      tooltip.id = 'tooltip';
+      document.body.appendChild(tooltip);
+    }
+
+    // Set the tooltip content
+    tooltip.innerHTML = `
+    <strong>${dot.label}</strong><br><br>
+    <div class="tooltip-p">
+    Kontaktperson: ${dot.contact}<br><br>
+    Website: <a href="${dot.website}" target="_blank">${dot.website}</a><br>
+    </div>
+  `;
+  
+    // Display the tooltip
+    tooltip.style.display = 'block';
+  });
 });
+

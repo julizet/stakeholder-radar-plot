@@ -1,13 +1,81 @@
 body {
-  background: #aaa;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
 }
 
+h1 {
+  font-weight: 600;
+  width: 30%;
+  background-image: linear-gradient(to right, #B39DDB, #FF8B94);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.rectangle {
+  position: fixed;
+  top: 6.5em;
+  right: 4em;
+  width: 240px;
+  height: 100px;
+  border: 4px dotted black;
+  background-color: #f7f7f7;
+  z-index: -99;
+}
+
+.header{
+  padding: 1em 0 0 2em;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+} 
+
 .svg-container {
+  align-items: center;
+  height: 100vh;
+  width: 150vh;
+}
+
+#tooltip {
+  position: fixed;
+  top: 6.5em;
+  right: 4em;
+  width: 240px;
+  height: 100px;
   background: white;
-  width: 95vw;
-  height: 95vw;
-  margin: auto;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border: 4px dotted black;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.tooltip-p {
+font-size: small;
+}
+.dot-circle {
+  transition: stroke-width 0.3s ease, transform 0.3s ease;
+}
+
+.dot-circle:hover {
+  stroke-width: 3px;
+  stroke: black;
+  stroke-dasharray: 0 5;
+  stroke-linecap: round;
+  transform: scale(1.4);
+}
+
+.dot-circle.focused {
+  stroke-width: 3px;
+  stroke: black;
+  stroke-dasharray: 0 5;
+  stroke-linecap: round;
+  transform: scale(1.4);
 }
