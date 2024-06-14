@@ -48,21 +48,18 @@ radar.segmentAxes.forEach((segAxis) => {
   labelPath.setAttribute('d', segAxis.axis.labelPath);
   labelPath.setAttribute('fill', 'none');
   labelPath.setAttribute('stroke', segAxis.color);
-  labelPath.setAttribute('stroke-width', 40);
+  labelPath.setAttribute('stroke-width', 30);
 
   const label = document.createElementNS(xmlns, 'text');
   const labelTextPath = document.createElementNS(xmlns, 'textPath');
   labelTextPath.setAttribute('href', `#label-path-${segAxis.slug}`);
   labelTextPath.innerHTML = segAxis.label;
-  labelTextPath.setAttribute('font-weight', '800');
+  labelTextPath.setAttribute('font-weight', '300');
   labelTextPath.setAttribute(
     'font-size',
-    `${radar.options.totalAngle / 3.5 + 0.2}em`
+    `${radar.options.totalAngle / 4 + 0.2}em`
   );
   labelTextPath.setAttribute('font-family', 'Sans-serif');
-
-  labelTextPath.setAttribute('stroke', segAxis.color);
-  labelTextPath.setAttribute('stroke-width', 1);
 
   labelTextPath.setAttribute('startOffset', '50%');
   labelTextPath.setAttribute('text-anchor', 'middle');
@@ -97,45 +94,55 @@ radar.dots.forEach((dot) => {
   dotEl.appendChild(circle);
   dotEl.appendChild(label);
 
+  let tooltip = document.getElementById('tooltip');
+  if (!tooltip) {
+    tooltip = document.createElement('div');
+    tooltip.id = 'tooltip';
+    document.body.appendChild(tooltip);
+  }
+
+  tooltip.innerHTML = `s<strong>${dot.label}</strong><br><br>`;
+
   // Add hover effect
   circle.addEventListener('mouseenter', () => {
+    tooltip.style.display = 'block';
+    tooltip.innerHTML = dot.label;
     circle.classList.add('hovered');
   });
+
+  circle.addEventListener('mousemove', (event) => {
+    tooltip.style.left = event.pageX + 20 + 'px';
+    tooltip.style.top = event.pageY + 20 + 'px';
+  });
+  
 
   circle.addEventListener('mouseleave', () => {
     circle.classList.remove('hovered');
   });
 
-  // Add click event listener for focus and tooltip
-  dotEl.addEventListener('click', (event) => {
+  dotEl.addEventListener('click', () => {
     // Remove focus from any previously focused circle
     const previouslyFocused = document.querySelector('circle.focused');
     if (previouslyFocused) {
       previouslyFocused.classList.remove('focused');
     }
-
-    // Set focus on the clicked circle
     circle.classList.add('focused');
 
-    // Get or create the tooltip element
-    let tooltip = document.getElementById('tooltip');
-    if (!tooltip) {
-      tooltip = document.createElement('div');
-      tooltip.id = 'tooltip';
-      document.body.appendChild(tooltip);
+    let infobox = document.getElementById('infobox');
+    if (!infobox) {
+      infobox = document.createElement('div');
+      infobox.id = 'infobox';
+      document.body.appendChild(infobox);
     }
 
-    // Set the tooltip content
-    tooltip.innerHTML = `
+    infobox.innerHTML = `
     <strong>${dot.label}</strong><br><br>
-    <div class="tooltip-p">
+    <div class="infobox-p">
     Kontaktperson: ${dot.contact}<br><br>
     Website: <a href="${dot.website}" target="_blank">${dot.website}</a><br>
     </div>
   `;
-  
-    // Display the tooltip
-    tooltip.style.display = 'block';
+    infobox.style.display = 'block';
   });
 });
 
