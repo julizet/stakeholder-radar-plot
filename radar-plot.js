@@ -134,12 +134,14 @@ radar.dots.forEach((dot) => {
       infobox.id = 'infobox';
       document.body.appendChild(infobox);
     }
+    
+    const tagsHtml = dot.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ');
 
     infobox.innerHTML = `
     <strong>${dot.label}</strong><br><br>
     <div class="infobox-p">
-    Kontaktperson: ${dot.contact}<br><br>
-    Website: <a href="${dot.website}" target="_blank">${dot.website}</a><br>
+    Website: <a href="${dot.website}" target="_blank">${dot.website}</a><br><br>
+    Tags: ${tagsHtml}
     </div>
   `;
     infobox.style.display = 'block';

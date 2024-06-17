@@ -6,8 +6,8 @@ body {
 }
 
 h1 {
+  display: inline-block;
   font-weight: 600;
-  width: 30%;
   background-image: linear-gradient(to right, #B39DDB, #FF8B94);
   color: transparent;
   background-clip: text;
@@ -40,6 +40,26 @@ h4 {
   display: flex;
   justify-content: center;
 } 
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tag:hover {
+  background-color: #c0c0c0;
+}
+
+.tag {
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(to right, #B39DDB, #FF8B94);
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin: 2px;
+  font-size: 0.9em;
+}
 
 .svg-container {
   align-items: center;
