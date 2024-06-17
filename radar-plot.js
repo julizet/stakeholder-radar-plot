@@ -85,6 +85,32 @@ uniqueTags.forEach(tag => {
   tagContainer.appendChild(tagElement);
 });
 
+function filterDotsByTag(tag) {
+  const dots = document.querySelectorAll('.dot-circle');
+  dots.forEach(dot => {
+    const dotTags = dot.dataset.tags.split(',');
+    dot.style.opacity = dotTags.includes(tag) ? 1 : 0.2;
+    if (dotTags.includes(tag)) {
+      dot.classList.add('highlighted');
+    } else {
+      dot.classList.remove('highlighted');
+    }
+  });
+}
+
+function resetFilter() {
+  const dots = document.querySelectorAll('.dot-circle');
+  dots.forEach(dot => {
+    dot.style.opacity = 1;
+  });
+}
+
+document.addEventListener('click', (event) => {
+  if (!event.target.classList.contains('tag')) {
+    resetFilter();
+  }
+});
+
 radar.dots.forEach((dot) => {
   const dotEl = document.createElementNS(xmlns, 'g');
   dotEl.setAttribute('style', `transform: translate(${dot.x}px, ${dot.y}px)`);
@@ -96,6 +122,7 @@ radar.dots.forEach((dot) => {
   circle.setAttribute('stroke-width', 1);
   circle.setAttribute('fill', dot.color);
   circle.classList.add('dot-circle'); // Add a unique class to dots
+  circle.dataset.tags = dot.tags.join(',');
 
   const label = document.createElementNS(xmlns, 'text');
   label.innerHTML = dot.label.substr(0, 1);
@@ -154,8 +181,8 @@ radar.dots.forEach((dot) => {
     infobox.innerHTML = `
     <strong>${dot.label}</strong><br><br>
     <div class="infobox-p">
-    Website: <a href="${dot.website}" target="_blank">${dot.website}</a><br><br>
-    Tags: ${tagsHtml}
+    <a href="${dot.website}" target="_blank">${dot.website}</a><br><br>
+    ${tagsHtml}
     </div>
   `;
     infobox.style.display = 'block';
