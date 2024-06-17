@@ -1,4 +1,4 @@
-export const dots = [
+export const elements = [
   {
       "label": "Bundesamt für Naturschutz",
       "segment": "close-player",
