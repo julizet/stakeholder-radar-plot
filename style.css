@@ -18,18 +18,26 @@ h4 {
   font-size: 1em;
 }
 
-.rectangle {
+.rectangle, #infobox {
   position: fixed;
   top: 6.5em;
   right: 4em;
-  width: 280px;
-  height: 100px;
+  width: 300px;
   padding: 1em;
   text-align: center;
   line-height: 1.4em;
-  border: 4px dotted black;
+  border: 3px dotted black;
+  border-radius: 8px;
   background-color: #f7f7f7;
-  z-index: -99;
+}
+
+#infobox {
+  display: none;
+  z-index: 1111;
+}
+
+#infobox-p {
+font-size: small;
 }
 
 .header{
@@ -38,17 +46,15 @@ h4 {
 
 .content{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 } 
 
 .tag-container {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.tag:hover {
-  background-color: #c0c0c0;
+  align-content: flex-start;
+  padding-left: 1.6em;
+  width: 30%;
 }
 
 .tag {
@@ -57,12 +63,19 @@ h4 {
   background-image: linear-gradient(to right, #B39DDB, #FF8B94);
   border-radius: 3px;
   padding: 2px 5px;
-  margin: 2px;
-  font-size: 0.9em;
+  margin: 0.5em;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #B39DDB;
 }
 
 .svg-container {
-  align-items: center;
+  position: inherit;
+  left: 50%;
+  right: 50%;
   height: 100vh;
   width: 150vh;
 }
@@ -71,29 +84,13 @@ h4 {
   position: fixed;
   background: white;
   border: 2px dotted black;
+  border-radius: 4px;
   stroke-linecap: round;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none;
 }
 
-#infobox {
-  position: fixed;
-  top: 6.5em;
-  right: 4em;
-  width: 300px;
-  height: 140px;
-  background: white;
-  border: 4px dotted black;
-  stroke-linecap: round;
-  padding: 1em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-
-#infobox-p {
-font-size: small;
-}
 .dot-circle {
   transition: stroke-width 0.3s ease, transform 0.3s ease;
 }

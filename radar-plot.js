@@ -71,6 +71,20 @@ radar.segmentAxes.forEach((segAxis) => {
 
 console.log(radar.dots);
 
+// collect unique tags
+const uniqueTags = new Set();
+elements.forEach(dot => dot.tags.forEach(tag => uniqueTags.add(tag)));
+
+// display in tag-container
+const tagContainer = document.querySelector('.tag-container');
+uniqueTags.forEach(tag => {
+  const tagElement = document.createElement('span');
+  tagElement.classList.add('tag');
+  tagElement.textContent = tag;
+  tagElement.addEventListener('click', () => filterDotsByTag(tag));
+  tagContainer.appendChild(tagElement);
+});
+
 radar.dots.forEach((dot) => {
   const dotEl = document.createElementNS(xmlns, 'g');
   dotEl.setAttribute('style', `transform: translate(${dot.x}px, ${dot.y}px)`);
