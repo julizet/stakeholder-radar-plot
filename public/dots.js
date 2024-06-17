@@ -1,4 +1,4 @@
-[
+export const dots = [
   {
       "label": "Bundesamt für Naturschutz",
       "segment": "close-player",

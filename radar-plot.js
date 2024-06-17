@@ -1,7 +1,7 @@
-import elements from './public/dots.json';
-import rings from './public/rings.json';
-import segments from './public/segments.json';
-import { Radar } from './js/radar';
+import { elements } from './public/dots.js';
+import { rings } from './public/rings.js';
+import { segments } from './public/segments.js';
+import { Radar } from './js/radar.js';
 var xmlns = 'http://www.w3.org/2000/svg';
 
 const options = {

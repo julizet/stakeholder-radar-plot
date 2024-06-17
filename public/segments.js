@@ -1,4 +1,4 @@
-[
+export const segments = [
   { "label": "Wissenschaft & Forschung", "slug": "science", "color": "#A8E6CF" },
   { "label": "Wirtschaft", "slug": "economy", "color": "#FF8B94" },
   {
