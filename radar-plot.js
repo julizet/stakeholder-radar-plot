@@ -1,6 +1,6 @@
-import elements from './data/dots.json';
-import rings from './data/rings.json';
-import segments from './data/segments.json';
+import elements from './public/dots.json';
+import rings from './public/rings.json';
+import segments from './public/segments.json';
 import { Radar } from './js/radar';
 var xmlns = 'http://www.w3.org/2000/svg';
 

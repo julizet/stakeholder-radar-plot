@@ -1,29 +1,29 @@
 [
   {
       "label": "Bundesamt für Naturschutz",
-      "segment": "close",
+      "segment": "close-player",
       "ring": "germany"
   },
   {
       "label": "Grün Berlin GmbH",
-      "segment": "close",
+      "segment": "close-player",
       "ring": "berlin", 
-      "contact": "👻",
-      "website": "https://gruen-berlin.de/"
+      "website": "https://gruen-berlin.de/", 
+      "tags": ["sensors", "greenery", "parks", "urban planning"]
   },
   {
       "label": "Zukunft Umwelt Gesellschaft",
-      "segment": "close",
+      "segment": "close-player",
       "ring": "germany"
   },
   {
       "label": "Berliner Stadtreinigung",
-      "segment": "close",
+      "segment": "close-player",
       "ring": "berlin"
   },
   {
       "label": "Amt für Statistik B/B",
-      "segment": "close",
+      "segment": "close-player",
       "ring": "berlin"
   }, 
   {
@@ -121,7 +121,6 @@
     "segment": "city-administration",
     "ring": "berlin", 
     "website": "https://www.berlin.de/pflanzenschutzamt/",
-    "contact": "Martin Schreiner"
   }, 
   {
     "label": "InfraLAB",
@@ -192,7 +191,6 @@
     "label": "MIT Senseable LAB",
     "segment": "science",
     "ring": "global",
-    "contact": "Simone Mora",
     "website": "https://senseable.mit.edu/"
   }
 ]

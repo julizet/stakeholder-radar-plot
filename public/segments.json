@@ -6,7 +6,7 @@
     "slug": "city-administration",
     "color": "#B39DDB"
   },
-  { "label": "Verwaltungsnahe Akteure", "slug": "close", "color": "#81D4FA" },
+  { "label": "Verwaltungsnahe Akteure", "slug": "close-player", "color": "#81D4FA" },
   { "label": "Zivilgesellschaft", "slug": "civil-society", "color": "#FFF176" },
   { "label": "Stiftung & Vereine", "slug": "charities", "color": "#FFAB91" }
 ]
